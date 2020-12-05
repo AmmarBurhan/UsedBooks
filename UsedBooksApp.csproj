@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome" Version="4.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\Carosel1.jpg" />
+    <None Include="wwwroot\Images\Carosel2.jpg" />
+    <None Include="wwwroot\Images\Carosel3.jpg" />
+    <None Include="wwwroot\Images\Col1.jpg" />
+    <None Include="wwwroot\Images\Col2.jpg" />
+    <None Include="wwwroot\Images\Col3.jpg" />
+    <None Include="wwwroot\Images\CSharp.jpg" />
+    <None Include="wwwroot\Images\HTML.jpg" />
+    <None Include="wwwroot\Images\Java.jpg" />
+    <None Include="wwwroot\Images\JS.png" />
+    <None Include="wwwroot\Images\SQL.jpg" />
+    <None Include="wwwroot\Images\Thumbnails\CSharpIcon.jpg" />
+    <None Include="wwwroot\Images\Thumbnails\HTMLIcon.png" />
+    <None Include="wwwroot\Images\Thumbnails\JavaIcon.png" />
+    <None Include="wwwroot\Images\Thumbnails\JSIcon.png" />
+    <None Include="wwwroot\Images\Thumbnails\SQLIcon.png" />
+  </ItemGroup>
+
+
+
+</Project>

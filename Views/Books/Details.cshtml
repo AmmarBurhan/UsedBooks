@@ -1,0 +1,73 @@
+﻿@model UsedBooksApp.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+    string imagename = "../Images/" + (Model.Image ?? "no_image.png");
+}
+
+<h1>Book Details</h1>
+
+@*<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PublishedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PublishedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+    </dl>
+</div>*@
+
+
+<div class="container">
+    <div class="row justify-content-center m-3">
+        <div class="col text-center">
+            <div class="card">
+                <div class="card-header">
+                    <h4> @Model.Title</h4>
+                </div>
+                <div class="card-body justify-content-center">
+                    <img src="/@imagename" alt="@Model.Title" class="card-img-top" asp-append-version="true" style="max-height: 700px; max-width:300px;"/>
+                    <h5>Author: @Model.Author</h5>
+                    <h5>ISBN: @Model.ISBN</h5>
+                    <h5>Published Date: @Model.PublishedDate.ToLongDateString()</h5>
+                </div>
+                <div class="card-footer">
+                    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
